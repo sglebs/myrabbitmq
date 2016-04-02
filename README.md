@@ -9,7 +9,8 @@ git clone git@github.com:sglebs/rabbitmq.git
 cd rabbitmq
 git remote add dokku dokku@127.0.0.1.nip.io:rabbitmq
 dokku apps:create rabbitmq
-dokku docker-options:add kibana deploy "-m 256mb"
+dokku docker-options:add rabbitmq deploy "-p 80:15672"
+dokku docker-options:add rabbitmq deploy "-m 256mb"
 git push dokku
 ```
 
