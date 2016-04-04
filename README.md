@@ -10,7 +10,7 @@ cd rabbitmq
 git remote add dokku dokku@127.0.0.1.nip.io:rabbitmq
 dokku apps:create rabbitmq
 dokku docker-options:add rabbitmq deploy "-p 80:15672"
-dokku docker-options:add rabbitmq deploy "-m 256mb"
+dokku docker-options:add rabbitmq deploy "-m 256m"
 git push dokku
 ```
 
