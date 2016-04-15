@@ -1,4 +1,4 @@
-FROM rabbitmq:3-management
+FROM rabbitmq:management
 
 EXPOSE 15672
 EXPOSE 5672
